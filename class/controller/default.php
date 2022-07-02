@@ -10,6 +10,7 @@ class DefaultController implements DefaultInterface
     public $url         = '';
     public $img         = '';
     public $text_button = '';
+    public $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_';
 
     private $data = [];
 
@@ -38,7 +39,7 @@ class DefaultController implements DefaultInterface
 
     public function url(string $product)
     {
-        return $this->url = $this->data[$product]['url'];
+        return $this->url = $this->data[$product]['url'] . $this->aff;
     }
 
 
