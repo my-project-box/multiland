@@ -107,7 +107,7 @@
             </div>
             <div class="col-12 col-lg-7 order-0 order-lg-1 info">
                 <?= $product->title ?>
-                <a href="<?= $product->url ?>" class="btn btn-danger fs-1"><?= $product->text_button ?></a>
+                <a href="<?= $product->url ?>" class="btn btn-danger fs-1" onclick="ym(89390270, 'reachGoal', 'CLICK'); return true;"><?= $product->text_button ?></a>
             </div>
         </section>
 
