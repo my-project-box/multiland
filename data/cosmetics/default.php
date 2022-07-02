@@ -3,7 +3,7 @@ return [
 
     'default' => [
         'title' => 'Эксклюзивная продукция в Летуаль',
-        'url'   => 'http://google.com',
+        'url'   => 'https://www.letu.ru/',
         'img'   => 'default.jpg'
     ]
 ];
