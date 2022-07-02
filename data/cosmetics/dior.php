@@ -1,5 +1,16 @@
 <?php 
 
+/*
+    '' => [
+        'model'       => '',
+        'description' => '',
+        'url'         => '',
+        'img'         => '.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+*/
+
 return [
     'capture-totale-c.e.l.l.-energy' => [
         'model'       => 'Capture Totale C.E.L.L. Energy',
@@ -126,4 +137,114 @@ return [
         'text_button' => 'Смотреть цену',
         'vendor'      => 'DIOR'
     ],
+
+    'one-essential-skin-boosting-super-serum' => [
+        'model'       => 'One Essential Skin Boosting Super Serum',
+        'description' => ' Интенсивная сыворотка для детоксикации кожи',
+        'url'         => 'https://www.letu.ru/product/dior-intensivnaya-syvorotka-dlya-detoksikatsii-kozhi-one-essential./57000001',
+        'img'         => 'one-essential-skin-boosting-super-serum.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'one-essential-eye-serum' => [
+        'model'       => 'One Essential Eye Serum',
+        'description' => 'Сыворотка для контура глаз',
+        'url'         => 'https://www.letu.ru/product/dior-syvorotka-dlya-kontura-glaz-one-essential/50500028',
+        'img'         => 'one-essential-eye-serum.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-huile-souveraine' => [
+        'model'       => 'Prestige Huile Souveraine',
+        'description' => 'Масло питательное',
+        'url'         => 'https://www.letu.ru/product/dior-maslo-pitatelnoe-dior-prestige-huile-souveraine/59800233',
+        'img'         => 'prestige-huile-souveraine.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-la-creme-texture-essentielle' => [
+        'model'       => 'Prestige La Creme Texture Essentielle',
+        'description' => 'Крем',
+        'url'         => 'https://www.letu.ru/product/dior-krem-prestige-la-creme/40800040',
+        'img'         => 'prestige-la-creme-texture-essentielle.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-la-creme-texture-rich' => [
+        'model'       => 'Prestige La Creme Texture Rich',
+        'description' => 'Крем для лица',
+        'url'         => 'https://www.letu.ru/product/dior-krem-dlya-litsa-dior-prestige-rich-texture-creme/52300028',
+        'img'         => 'prestige-la-creme-texture-rich.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-le-concentre-yeux' => [
+        'model'       => 'Prestige Le Concentre Yeux',
+        'description' => 'Крем для области вокруг глаз',
+        'url'         => 'https://www.letu.ru/product/dior-krem-dlya-oblasti-vokrug-glaz-prestige-le-concentre/50000001',
+        'img'         => 'prestige-le-concentre-yeux.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-le-grand-masque' => [
+        'model'       => 'Prestige Le Grand Masque',
+        'description' => 'Маска для лица',
+        'url'         => 'https://www.letu.ru/product/dior-maska-dlya-litsa-dior-prestige-le-grand/59800236',
+        'img'         => 'prestige-le-grand-masque.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-le-micro-caviar-de-rose' => [
+        'model'       => 'Prestige Le Micro Caviar de Rose',
+        'description' => 'Восстанавливающий концентрат для лица, шеи и зоны декольте',
+        'url'         => 'https://www.letu.ru/product/dior-kontsentrat-dlya-litsa-shei-i-zony-dekolte-vosstanavlivayushchii-dior-prestige-le-micro-caviar-de-rose/82600004',
+        'img'         => 'prestige-le-micro-caviar-de-rose.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-le-micro-serum-de-rose-yeux-advanced' => [
+        'model'       => 'Prestige Le Micro Serum de Rose Yeux Advanced',
+        'description' => 'Питательная сыворотка для кожи вокруг глаз',
+        'url'         => 'https://www.letu.ru/product/dior-prestige-le-micro-serum-de-rose-yeux-advanced-pitatelnaya-syvorotka-dlya-kozhi-vokrug-glaz/110800275',
+        'img'         => 'prestige-le-micro-serum-de-rose-yeux-advanced.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-le-nectar-de-nuit' => [
+        'model'       => 'Prestige Le Nectar De Nuit',
+        'description' => 'Ночной нектар',
+        'url'         => 'https://www.letu.ru/product/dior-nochnoi-nektar-dior-prestige-le-nectar-de-nuit/59800234',
+        'img'         => 'prestige-le-nectar-de-nuit.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-micro-huile-de-rose-advanced-serum' => [
+        'model'       => 'Prestige Micro Huile de Rose Advanced Serum',
+        'description' => 'Восстанавливающая сыворотка для лица с питательными микрочастицами',
+        'url'         => 'https://www.letu.ru/product/dior-vosstanavlivayushchaya-syvorotka-dlya-litsa-s-pitatelnymi-mikrochastitsami-dior-prestige-micro-huile-de-rose-advanced-serum/91800020',
+        'img'         => 'prestige-micro-huile-de-rose-advanced-serum.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    'prestige-la-micro-loiton-de-rose' => [
+        'model'       => 'Prestige La Micro Loiton de Rose',
+        'description' => 'Лосьон с микрочастицами гранвильской розы',
+        'url'         => 'https://www.letu.ru/product/dior-loson-s-mikrochastitsami-granvilskoi-rozy-prestige-micro-loiton/74400013',
+        'img'         => 'prestige-la-micro-loiton-de-rose.png',
+        'text_button' => 'Смотреть цену',
+        'vendor'      => 'DIOR'
+    ],
+
+    /////////////////////////////////////////////
 ];
