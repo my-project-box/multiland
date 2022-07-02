@@ -1,0 +1,122 @@
+/* --- Обнуление CSS стилей --- */
+* {margin: 0; padding: 0; border: 0;}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 16px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+:focus, :active, a:focus, a:active {
+	outline: none;
+}
+
+nav, header, footer, main, aside {
+	display: block;
+}
+
+input, button, textarea {
+	font-family: inherit;
+}
+
+input:: -ms-clear {display: none;}
+button {cursor: pointer;}
+button:: -moz-focus-inner {padding: 0, border: 0;}
+a, a:hover, a:visited {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+
+h1, h2, h3, h4, h5, h6 {font-size: inherif; font-weight: 400;}
+
+
+
+/** --- Основные стили --- */
+#main {
+	/*background-color: chocolate;*/
+	/*height: 100vh;*/
+	font-family: 'Montserrat', sans-serif;
+}
+
+#offer .img,
+#offer .info {
+	padding: 50px 0;
+	
+}
+
+#offer .img a {
+	display: flex;
+    justify-content: center;
+}
+
+#offer .info {
+	text-align: center;
+}
+
+#offer .info h1 {
+	line-height: .95;
+}
+
+#offer .btn {
+	margin-top: 40px;
+	border-radius: 50px;
+	padding: 10px 50px;
+}
+
+#info {
+	padding-top: 50px;
+}
+
+#info ul {
+	justify-content: space-between;
+}
+
+#info li {
+	padding-bottom: 20px;
+}
+
+#info li span:first-of-type {
+	font-weight: 900;
+	font-size: 1.5em;
+	line-height: 1;padding-bottom: 20px;
+}
+
+#info li span:first-of-type::after {
+	display: block;
+	content: '';
+	border-bottom: 2px #A8DAEB solid;
+	margin: 20px 0;
+}
+
+#payment {
+	padding: 50px 0;
+}
+
+#payment > div {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#payment div:first-of-type > span {
+	font-weight: 900;
+	font-size: 1.5em;
+	line-height: 1;
+	padding-bottom: 20px;
+}
+
+footer {
+	font-size: .9em;
+	color: darkgray;
+	padding-bottom: 50px;
+}
