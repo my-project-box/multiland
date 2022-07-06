@@ -13,11 +13,18 @@ class CosmeticsController implements CosmeticsInterface
     public $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_'; // &sub={campaign_name_lat}&sub2={ad_id}&sub3={keyword}
 
     private $data = [];
+    private $document = [];
     
 
+    /**
+     * 
+     * 
+     */
     public function __construct(array $data, string $product) 
     {
         $this->data = $data;
+        $this->document = require ROOT_DIR . '/language/document.php';
+
         $this->meta_title($product);
         $this->title($product);
         $this->url($product);
@@ -26,6 +33,10 @@ class CosmeticsController implements CosmeticsInterface
     }
 
     
+    /**
+     * 
+     * 
+     */
     public function meta_title(string $product) 
     {
         if ( !isset($this->data[$product]) || !array_key_exists('model', $this->data[$product]) || array_key_exists('model', $this->data[$product]) && empty($this->data[$product]['model']) ) 
@@ -38,6 +49,10 @@ class CosmeticsController implements CosmeticsInterface
     }
 
     
+    /**
+     * 
+     * 
+     */
     public function title(string $product) 
     {
         if ( !isset($this->data[$product]) || !array_key_exists('model', $this->data[$product]) || array_key_exists('model', $this->data[$product]) && empty($this->data[$product]['model']) ) 
@@ -50,6 +65,10 @@ class CosmeticsController implements CosmeticsInterface
     }
 
 
+    /**
+     * 
+     * 
+     */
     public function url(string $product)
     {
         if ( !isset($this->data[$product]) || !array_key_exists('url', $this->data[$product]) || array_key_exists('url', $this->data[$product]) && empty($this->data[$product]['url']) ) 
@@ -62,6 +81,10 @@ class CosmeticsController implements CosmeticsInterface
     }
 
 
+    /**
+     * 
+     * 
+     */
     public function img(string $product) 
     {
         if ( !isset($this->data[$product]) || !array_key_exists('img', $this->data[$product]) || array_key_exists('img', $this->data[$product]) && empty($this->data[$product]['img']) ) 
@@ -74,6 +97,10 @@ class CosmeticsController implements CosmeticsInterface
     }
 
 
+    /**
+     * 
+     * 
+     */
     public function text_button(string $product)
     {
         if ( !isset($this->data[$product]) || !array_key_exists('text_button', $this->data[$product]) || array_key_exists('text_button', $this->data[$product]) && empty($this->data[$product]['text_button']) ) 
@@ -82,6 +109,8 @@ class CosmeticsController implements CosmeticsInterface
             return $this->text_button = $data['default']['text_button'];
         }
 
-        return $this->text_button = $this->data[$product]['text_button'];
+        return $this->text_button = isset( $this->data[$product]['list'] ) && !empty( $this->data[$product]['list'] ) ? $this->document['text_button_list'] : $this->document['text_button_single'];
     }
+
+
 }
