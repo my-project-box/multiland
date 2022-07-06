@@ -107,7 +107,7 @@
             </div>
             <div class="col-12 col-lg-7 order-0 order-lg-1 info">
                 <?= $product->title ?>
-                <a href="<?= $product->url ?>" class="btn btn-danger fs-1" onclick="ym(89390270, 'reachGoal', 'CLICK'); return true;"><?= $product->text_button ?></a>
+                <a href="<?= $product->url ?>" class="btn btn-danger fs-1" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;"><?= $product->text_button ?></a>
             </div>
         </section>
 
@@ -161,14 +161,14 @@
         m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        ym(89390270, "init", {
+        ym(88890201, "init", {
                 clickmap:true,
                 trackLinks:true,
                 accurateTrackBounce:true,
                 webvisor:true
         });
         </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/89390270" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <noscript><div><img src="https://mc.yandex.ru/watch/88890201" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
     <!-- /Yandex.Metrika counter -->
 </body>

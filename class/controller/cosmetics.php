@@ -10,7 +10,7 @@ class CosmeticsController implements CosmeticsInterface
     public $url         = '';
     public $img         = '';
     public $text_button = '';
-    public $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_';
+    public $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_'; // &sub={campaign_name_lat}&sub2={ad_id}&sub3={keyword}
 
     private $data = [];
     
