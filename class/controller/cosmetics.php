@@ -4,13 +4,13 @@ require ROOT_DIR . '/class/interface/cosmetics.php';
 
 class CosmeticsController implements CosmeticsInterface 
 {
-    public $meta_title = '';
-
-    public $title       = '';
-    public $url         = '';
-    public $img         = '';
-    public $text_button = '';
-    public $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_'; // &sub={campaign_name_lat}&sub2={ad_id}&sub3={keyword}
+    public string $meta_title  = '';
+    public string $title       = '';
+    public string $url         = '';
+    public string $img         = '';
+    public string $text_button = '';
+    public array $products     = [];
+    public string $aff         = '?utm_source=partners&utm_medium=cpa&utm_campaign=691&utm_content=46gog&oid=j05afpv8l&wid=46gog&statid=659_'; // &sub={campaign_name_lat}&sub2={ad_id}&sub3={keyword}
 
     private $data = [];
     private $document = [];
@@ -30,6 +30,7 @@ class CosmeticsController implements CosmeticsInterface
         $this->url($product);
         $this->img($product);
         $this->text_button($product);
+        $this->catalog($product);
     }
 
     
@@ -71,6 +72,9 @@ class CosmeticsController implements CosmeticsInterface
      */
     public function url(string $product)
     {
+        if ( isset($this->data[$product]['products']) && !empty($this->data[$product]['products']) )
+            return $this->url = $this->document['link_catalog'];
+
         if ( !isset($this->data[$product]) || !array_key_exists('url', $this->data[$product]) || array_key_exists('url', $this->data[$product]) && empty($this->data[$product]['url']) ) 
         {
             $data = require ROOT_DIR . '/data/default.php';
@@ -103,13 +107,46 @@ class CosmeticsController implements CosmeticsInterface
      */
     public function text_button(string $product)
     {
-        if ( !isset($this->data[$product]) || !array_key_exists('text_button', $this->data[$product]) || array_key_exists('text_button', $this->data[$product]) && empty($this->data[$product]['text_button']) ) 
+        if ( isset($this->data[$product]['products']) && !empty($this->data[$product]['products']) )
+            return $this->text_button = $this->document['text_button_catalog'];
+        
+        /*if ( 
+            !isset($this->data[$product]) || 
+            !array_key_exists('text_button', $this->data[$product]) || 
+            array_key_exists('text_button', $this->data[$product]) && empty($this->data[$product]['text_button']) 
+        ) 
         {
             $data = require ROOT_DIR . '/data/default.php';
             return $this->text_button = $data['default']['text_button'];
+        }*/
+
+        return $this->text_button = $this->document['text_button_single'];
+    }
+
+
+
+    /**
+     * 
+     * 
+     */
+    public function catalog(string $product) 
+    {
+        if ( 
+            !isset($this->data[$product]) || 
+            !array_key_exists('products', $this->data[$product]) || 
+            array_key_exists('products', $this->data[$product]) && empty($this->data[$product]['products']) 
+        ) 
+        {
+            $data = require ROOT_DIR . '/data/default.php';
+            return $this->products = [];
         }
 
-        return $this->text_button = isset( $this->data[$product]['list'] ) && !empty( $this->data[$product]['list'] ) ? $this->document['text_button_list'] : $this->document['text_button_single'];
+        foreach ($this->data[$product]['products'] as $product_cat) {
+            $this->data[$product_cat]['url'] = $this->data[$product_cat]['url'] . $this->aff;
+            $this->data[$product_cat]['text_button'] = $this->document['text_button_catalog_product'];
+            $this->products[] = $this->data[$product_cat];
+        }
+
     }
 
 

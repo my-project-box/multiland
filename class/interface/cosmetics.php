@@ -7,4 +7,6 @@ interface CosmeticsInterface
     public function url(string $product);
     public function img(string $product);
     public function text_button(string $product);
+    public function catalog(string $product);
+
 }

@@ -76,7 +76,7 @@
     }
 
     $_SESSION['aff'] = $product->url;
-    //d($_SESSION);
+    //d($product);
 ?>
 
 
@@ -110,6 +110,35 @@
                 <a href="<?= $product->url ?>" class="btn btn-danger fs-1" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;"><?= $product->text_button ?></a>
             </div>
         </section>
+
+        <?php if ( isset($product->products)) : ?>
+        <section id="catalog" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="padding: 100px 0;">
+            <?php foreach ($product->products as $elem_card) : ?>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="<?= $elem_card['url'] ?>">
+                        <img src="<?= PATH_DIR_IMG_VENDOR . $elem_card['img'] ?>" class="card-img-top" alt="<?= $elem_card['model'] ?>">
+                    </a>
+                    
+                    <div class="card-body">
+                        <div class="card-title">
+                            <a href="<?= $elem_card['url'] ?>">
+                                <span class="display-6"><?= $elem_card['vendor'] ?></span><br/>
+                                <span class="fs-5"><?= $elem_card['model'] ?></span>
+                            </a>
+                        </div>
+                        <p class="card-text"><?= $elem_card['description'] ?></p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="<?= $elem_card['url'] ?>" class="btn btn-danger fs-2" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;">
+                            <?= $elem_card['text_button'] ?>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach ?>
+        </section>
+        <?php endif ?>
 
         <section id="info" class="row">
             <div class="col-12">
