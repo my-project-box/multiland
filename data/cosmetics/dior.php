@@ -235,7 +235,7 @@ return [
     'capture-totale-super-potent' => [
         'model'       => 'Capture Totale Super Potent',
         'description' => '',
-        'img'         => 'capture-totale-super-potent.png',
+        'img'         => 'cosmetics.webp', //capture-totale-super-potent.png
         'products'    => ['capture-totale-c.e.l.l.-energy-super-potent-serum', 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum'],
         'vendor'      => 'DIOR'
     ],

@@ -107,11 +107,12 @@
             </div>
             <div class="col-12 col-lg-7 order-0 order-lg-1 info">
                 <?= $product->title ?>
-                <a href="<?= $product->url ?>" class="btn btn-danger fs-1" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;"><?= $product->text_button ?></a>
+                <?php $reachGoal = isset($product->products) && empty($product->products) ? 'onclick="ym(88890201, \'reachGoal\', \'CLICK\'); return true;"': ''; ?>
+                <a href="<?= $product->url ?>" class="btn btn-danger fs-1" <?= $reachGoal ?>><?= $product->text_button ?></a>
             </div>
         </section>
 
-        <?php if ( isset($product->products)) : ?>
+        <?php if ( isset($product->products) && !empty($product->products)) : ?>
         <section id="catalog" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" style="padding: 100px 0;">
             <?php foreach ($product->products as $elem_card) : ?>
             <div class="col">
