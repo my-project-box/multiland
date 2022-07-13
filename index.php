@@ -51,29 +51,9 @@
         define('PATH_DIR_IMG_VENDOR', PATH_DIR_IMG);
     }
     
-    $product = new $controllerName($data, $product);
-
-    if ( preg_match('~utm_~', $uri['query']) )
-    {
-        parse_str($uri['query'], $query);
-
-        $n = 1;
-
-        foreach ($query as $key => $value) 
-        {
-            if ( preg_match('~utm_campaign|utm_content|utm_term~', $key) ) 
-            {
-                
-                if ($n == 1)
-                    $product->url .= '&sub='. $value;
-
-                else 
-                    $product->url .= '&sub'. $n .'='. $value;
-
-                $n++;
-            }
-        }
-    }
+    $get = isset($uri['query']) ? $uri['query'] : '';
+    
+    $product = new $controllerName($data, $product, $get);
 
     $_SESSION['aff'] = $product->url;
     //d($product);
@@ -100,14 +80,15 @@
     <div id="main" class="container">
 
         <section id="offer" class="row">
+        <?php $reachGoal = isset($product->products) && empty($product->products) ? 'onclick="ym(88890201, \'reachGoal\', \'CLICK\'); return true;"': ''; ?>
             <div class="col-12 col-lg-5 order-1 order-lg-0 img">
-            <a href="<?= $product->url ?>">
+            <a href="<?= $product->url ?>" <?= $reachGoal ?>>
                 <img src="<?= PATH_DIR_IMG_VENDOR . $product->img ?>" alt="<?= $product->meta_title ?>" class="figure-img img-fluid rounded">
             </a>
             </div>
             <div class="col-12 col-lg-7 order-0 order-lg-1 info">
                 <?= $product->title ?>
-                <?php $reachGoal = isset($product->products) && empty($product->products) ? 'onclick="ym(88890201, \'reachGoal\', \'CLICK\'); return true;"': ''; ?>
+                
                 <a href="<?= $product->url ?>" class="btn btn-danger fs-1" <?= $reachGoal ?>><?= $product->text_button ?></a>
             </div>
         </section>
@@ -117,13 +98,13 @@
             <?php foreach ($product->products as $elem_card) : ?>
             <div class="col">
                 <div class="card h-100">
-                    <a href="<?= $elem_card['url'] ?>">
+                    <a href="<?= $elem_card['url'] ?>" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;">
                         <img src="<?= PATH_DIR_IMG_VENDOR . $elem_card['img'] ?>" class="card-img-top" alt="<?= $elem_card['model'] ?>">
                     </a>
                     
                     <div class="card-body">
                         <div class="card-title">
-                            <a href="<?= $elem_card['url'] ?>">
+                            <a href="<?= $elem_card['url'] ?>" onclick="ym(88890201, 'reachGoal', 'CLICK'); return true;">
                                 <span class="display-6"><?= $elem_card['vendor'] ?></span><br/>
                                 <span class="fs-5"><?= $elem_card['model'] ?></span>
                             </a>
