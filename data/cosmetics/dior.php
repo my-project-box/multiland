@@ -263,6 +263,14 @@ return [
         ],
     */
 
+    'capture-totale' => [
+        'model'       => 'Capture Totale',
+        'description' => 'Линия средств по уходу за кожей',
+        'img'         => 'cosmetics.webp',
+        'products'    => ['capture-totale-creme-de-nuit-haute-regeneration-visage-cou', 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme', 'capture-totale-c.e.l.l.-energy', 'capture-totale-c.e.l.l.-energy-super-potent-serum', 'capture-totale-dream-skin-care-perfect', 'capture-totale-dreamskin-1-minute-mask', 'capture-totale-enegry-c.e.l.l.-eye-creme', 'capture-totale-intensive-essence-lotion', 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum', 'capture-totale-super-potent-cleanser'],
+        'vendor'      => 'DIOR'
+    ],
+
     'capture-totale-super-potent' => [
         'model'       => 'Capture Totale Super Potent',
         'description' => 'Линия средств по уходу за кожей, обеспечивает мгновенное заметное преображение кожи',
