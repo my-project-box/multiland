@@ -6,7 +6,6 @@
         'description' => '',
         'url'         => '',
         'img'         => '.png',
-        'text_button' => 'Смотреть цену',
         'vendor'      => 'DIOR'
     ],
 */
@@ -220,6 +219,38 @@ return [
         'vendor'      => 'DIOR'
     ],
 
+    'capture-totale-creme-de-nuit-haute-regeneration-visage-cou' => [
+        'model'       => 'Capture Totale Creme de Nuit Haute Regeneration Visage & Cou',
+        'description' => 'Интенсивный восстанавливающий ночной крем для лица и шеи',
+        'url'         => 'https://www.letu.ru/product/dior-intensivnyi-vosstanavlivayushchii-nochnoi-krem-dlya-litsa-i-shei-capture-totale/16700029',
+        'img'         => 'capture-totale-creme-de-nuit-haute-regeneration-visage-cou.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-c.e.l.l.-energy-super-potent-rich-creme' => [
+        'model'       => 'Capture Totale C.E.L.L. Energy Super Potent Rich Creme',
+        'description' => 'Крем для лица с насыщенной текстурой',
+        'url'         => 'https://www.letu.ru/product/dior-capture-totale-krem-dlya-litsa-s-nasyshchennoi-teksturoi/97000068',
+        'img'         => 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-dreamskin-1-minute-mask' => [
+        'model'       => 'Capture Totale Dreamskin 1-minute Mask',
+        'description' => 'Маска для лица, придающая коже совершенство',
+        'url'         => 'https://www.letu.ru/product/dior-maska-dlya-litsa-pridayushchaya-kozhe-sovershenstvo-capture-totale-dreamskin-1-minute-mask/90200149',
+        'img'         => 'capture-totale-dreamskin-1-minute-mask.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-super-potent-cleanser' => [
+        'model'       => 'Capture Totale Super Potent Cleanser',
+        'description' => 'Очищающий мусс для умывания лица',
+        'url'         => 'https://www.letu.ru/product/dior-capture-totale-super-potent-cleanser-ochishchayushchii-muss-dlya-umyvaniya-litsa/110800131',
+        'img'         => 'capture-totale-super-potent-cleanser.png',
+        'vendor'      => 'DIOR'
+    ],
+
     /** Категории **/
 
     /*
@@ -236,7 +267,7 @@ return [
         'model'       => 'Capture Totale Super Potent',
         'description' => 'Линия средств по уходу за кожей, обеспечивает мгновенное заметное преображение кожи',
         'img'         => 'cosmetics.webp', //capture-totale-super-potent.png
-        'products'    => ['capture-totale-c.e.l.l.-energy-super-potent-serum', 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum'],
+        'products'    => ['capture-totale-c.e.l.l.-energy-super-potent-serum', 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum', 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme', 'capture-totale-super-potent-cleanser'],
         'vendor'      => 'DIOR'
     ],
 ];
