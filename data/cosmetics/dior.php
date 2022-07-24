@@ -11,6 +11,8 @@
 */
 
 return [
+
+    /** DIOR Capture Totale **/
     'capture-totale-c.e.l.l.-energy' => [
         'model'       => 'Capture Totale C.E.L.L. Energy',
         'description' => 'Укрепляющий крем для лица и шеи, корректирующий морщины',
@@ -58,6 +60,39 @@ return [
         'img'         => 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum.png',
         'vendor'      => 'DIOR'
     ],
+    'capture-totale-creme-de-nuit-haute-regeneration-visage-cou' => [
+        'model'       => 'Capture Totale Creme de Nuit Haute Regeneration Visage & Cou',
+        'description' => 'Интенсивный восстанавливающий ночной крем для лица и шеи',
+        'url'         => 'https://www.letu.ru/product/dior-intensivnyi-vosstanavlivayushchii-nochnoi-krem-dlya-litsa-i-shei-capture-totale/16700029',
+        'img'         => 'capture-totale-creme-de-nuit-haute-regeneration-visage-cou.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-c.e.l.l.-energy-super-potent-rich-creme' => [
+        'model'       => 'Capture Totale C.E.L.L. Energy Super Potent Rich Creme',
+        'description' => 'Крем для лица с насыщенной текстурой',
+        'url'         => 'https://www.letu.ru/product/dior-capture-totale-krem-dlya-litsa-s-nasyshchennoi-teksturoi/97000068',
+        'img'         => 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-dreamskin-1-minute-mask' => [
+        'model'       => 'Capture Totale Dreamskin 1-minute Mask',
+        'description' => 'Маска для лица, придающая коже совершенство',
+        'url'         => 'https://www.letu.ru/product/dior-maska-dlya-litsa-pridayushchaya-kozhe-sovershenstvo-capture-totale-dreamskin-1-minute-mask/90200149',
+        'img'         => 'capture-totale-dreamskin-1-minute-mask.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'capture-totale-super-potent-cleanser' => [
+        'model'       => 'Capture Totale Super Potent Cleanser',
+        'description' => 'Очищающий мусс для умывания лица',
+        'url'         => 'https://www.letu.ru/product/dior-capture-totale-super-potent-cleanser-ochishchayushchii-muss-dlya-umyvaniya-litsa/110800131',
+        'img'         => 'capture-totale-super-potent-cleanser.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    /** DIOR Capture Youth **/
 
     'capture-youth-intense-rescue' => [
         'model'       => 'Capture Youth Intense Rescue',
@@ -123,6 +158,8 @@ return [
         'vendor'      => 'DIOR'
     ],
 
+    /** DIOR One Essential **/
+
     'one-essential-skin-boosting-super-serum' => [
         'model'       => 'One Essential Skin Boosting Super Serum',
         'description' => ' Интенсивная сыворотка для детоксикации кожи',
@@ -138,6 +175,8 @@ return [
         'img'         => 'one-essential-eye-serum.png',
         'vendor'      => 'DIOR'
     ],
+
+    /** DIOR Prestige **/
 
     'prestige-huile-souveraine' => [
         'model'       => 'Prestige Huile Souveraine',
@@ -219,35 +258,53 @@ return [
         'vendor'      => 'DIOR'
     ],
 
-    'capture-totale-creme-de-nuit-haute-regeneration-visage-cou' => [
-        'model'       => 'Capture Totale Creme de Nuit Haute Regeneration Visage & Cou',
-        'description' => 'Интенсивный восстанавливающий ночной крем для лица и шеи',
-        'url'         => 'https://www.letu.ru/product/dior-intensivnyi-vosstanavlivayushchii-nochnoi-krem-dlya-litsa-i-shei-capture-totale/16700029',
-        'img'         => 'capture-totale-creme-de-nuit-haute-regeneration-visage-cou.png',
+    /** DIOR Hydra Life **/
+
+    'hydra-life-deep-hydration-sorbet-water-essence' => [
+        'model'       => 'Hydra Life Deep Hydration Sorbet Water Essence',
+        'description' => 'Сыворотка-сорбе увлажняющая',
+        'url'         => 'https://www.letu.ru/product/dior-syvorotka-sorbe-uvlazhnyayushchaya-hydra-life/54000050',
+        'img'         => 'hydra-life-deep-hydration-sorbet-water-essence.png',
         'vendor'      => 'DIOR'
     ],
 
-    'capture-totale-c.e.l.l.-energy-super-potent-rich-creme' => [
-        'model'       => 'Capture Totale C.E.L.L. Energy Super Potent Rich Creme',
-        'description' => 'Крем для лица с насыщенной текстурой',
-        'url'         => 'https://www.letu.ru/product/dior-capture-totale-krem-dlya-litsa-s-nasyshchennoi-teksturoi/97000068',
-        'img'         => 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme.png',
+    'hydra-life-fresh-sorbet-creme' => [
+        'model'       => 'Hydra Life Fresh Sorbet Creme',
+        'description' => 'Освежающий крем-сорбе',
+        'url'         => 'https://www.letu.ru/product/dior-hydra-life-osvezhayushchii-krem-sorbe/114300373',
+        'img'         => 'hydra-life-fresh-sorbet-creme.png',
         'vendor'      => 'DIOR'
     ],
 
-    'capture-totale-dreamskin-1-minute-mask' => [
-        'model'       => 'Capture Totale Dreamskin 1-minute Mask',
-        'description' => 'Маска для лица, придающая коже совершенство',
-        'url'         => 'https://www.letu.ru/product/dior-maska-dlya-litsa-pridayushchaya-kozhe-sovershenstvo-capture-totale-dreamskin-1-minute-mask/90200149',
-        'img'         => 'capture-totale-dreamskin-1-minute-mask.png',
+    'hydra-life-hydration-rescue-intense-sorbet-creme' => [
+        'model'       => 'Hydra Life Hydration Rescue - Intense Sorbet Creme',
+        'description' => 'Питательный увлажняющий крем',
+        'url'         => 'https://www.letu.ru/product/dior-pitatelnyi-uvlazhnyayushchii-krem-dior-hydra-life-sorbet-rich-creme/62800108',
+        'img'         => 'hydra-life-hydration-rescue-intense-sorbet-creme.png',
         'vendor'      => 'DIOR'
     ],
 
-    'capture-totale-super-potent-cleanser' => [
-        'model'       => 'Capture Totale Super Potent Cleanser',
-        'description' => 'Очищающий мусс для умывания лица',
-        'url'         => 'https://www.letu.ru/product/dior-capture-totale-super-potent-cleanser-ochishchayushchii-muss-dlya-umyvaniya-litsa/110800131',
-        'img'         => 'capture-totale-super-potent-cleanser.png',
+    'hydra-life-creme-sorbet-intense' => [
+        'model'       => 'Hydra Life Creme Sorbet Intense',
+        'description' => 'Увлажняющий крем-сорбе с насыщенной текстурой',
+        'url'         => 'https://www.letu.ru/product/dior-hydra-life-uvlazhnyayushchii-krem-sorbe-s-nasyshchennoi-teksturoi/116100789',
+        'img'         => 'hydra-life-creme-sorbet-intense.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'hydra-life-pores-away-pink-clay-mask' => [
+        'model'       => 'Hydra Life Pores Away - Pink Clay Mask',
+        'description' => 'Маска для сужения пор',
+        'url'         => 'https://www.letu.ru/product/dior-maska-dlya-suzheniya-por-hydra-life/54000053',
+        'img'         => 'hydra-life-pores-away-pink-clay-mask.png',
+        'vendor'      => 'DIOR'
+    ],
+
+    'hydra-life-matte-dew-hydration-sorbet-droplet-emulsion' => [
+        'model'       => 'Hydra Life Matte Dew Hydration - Sorbet Droplet Emulsion',
+        'description' => 'Увлажняющая эмульсия-сорбет',
+        'url'         => 'https://www.letu.ru/product/dior-uvlazhnyayushchaya-emulsiya-sorbet-hydralife/91800010',
+        'img'         => 'hydra-life-matte-dew-hydration-sorbet-droplet-emulsion.png',
         'vendor'      => 'DIOR'
     ],
 
