@@ -311,14 +311,16 @@ return [
     /** Категории **/
 
     /*
-        'capture-totale-super-potent' => [
-            'model'       => 'Capture Totale Super Potent',
+        '' => [
+            'model'       => '',
             'description' => '',
-            'img'         => 'capture-totale-super-potent.png',
+            'img'         => '.png',
             'products'    => [],
             'vendor'      => 'DIOR'
         ],
     */
+
+    /** DIOR Capture Totale **/
 
     'capture-totale' => [
         'model'       => 'Capture Totale',
@@ -335,4 +337,70 @@ return [
         'products'    => ['capture-totale-c.e.l.l.-energy-super-potent-serum', 'capture-totale-c.e.l.l.-energy-super-potent-eye-serum', 'capture-totale-c.e.l.l.-energy-super-potent-rich-creme', 'capture-totale-super-potent-cleanser'],
         'vendor'      => 'DIOR'
     ],
+
+    /** DIOR Hydra Life **/
+
+    'hydra-life' => [
+        'model'       => 'Hydra Life',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => ['hydra-life-deep-hydration-sorbet-water-essence', 'hydra-life-fresh-sorbet-creme', 'hydra-life-creme-sorbet-intense', 'hydra-life-pores-away-pink-clay-mask', 'hydra-life-hydration-rescue-intense-sorbet-creme', 'hydra-life-matte-dew-hydration-sorbet-droplet-emulsion'],
+        'vendor'      => 'DIOR'
+    ],
+/*
+    '' => [
+        'model'       => 'Hydra Life Sorbet Creme',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],
+
+    '' => [
+        'model'       => '',
+        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'img'         => 'cosmetics.webp',
+        'products'    => [],
+        'vendor'      => 'DIOR'
+    ],*/
 ];
