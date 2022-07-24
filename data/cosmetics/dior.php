@@ -347,31 +347,31 @@ return [
         'products'    => ['hydra-life-deep-hydration-sorbet-water-essence', 'hydra-life-fresh-sorbet-creme', 'hydra-life-creme-sorbet-intense', 'hydra-life-pores-away-pink-clay-mask', 'hydra-life-hydration-rescue-intense-sorbet-creme', 'hydra-life-matte-dew-hydration-sorbet-droplet-emulsion'],
         'vendor'      => 'DIOR'
     ],
-/*
-    '' => [
+
+    'dior-hydra-life-sorbet-creme' => [
         'model'       => 'Hydra Life Sorbet Creme',
-        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+        'description' => 'Крем - сорбет',
         'img'         => 'cosmetics.webp',
-        'products'    => [],
+        'products'    => ['hydra-life-fresh-sorbet-creme', 'hydra-life-creme-sorbet-intense',  'hydra-life-hydration-rescue-intense-sorbet-creme'],
         'vendor'      => 'DIOR'
     ],
 
-    '' => [
-        'model'       => '',
-        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+    'dior-hydra-life-moisturizing-cream-sorbet' => [
+        'model'       => 'Hydra Life',
+        'description' => 'Увлажняющий крем-сорбет',
         'img'         => 'cosmetics.webp',
-        'products'    => [],
+        'products'    => ['hydra-life-creme-sorbet-intense', 'hydra-life-hydration-rescue-intense-sorbet-creme'],
         'vendor'      => 'DIOR'
     ],
 
-    '' => [
-        'model'       => '',
-        'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
+    'dior-hydra-cream' => [
+        'model'       => 'Hydra Life',
+        'description' => 'Крем',
         'img'         => 'cosmetics.webp',
-        'products'    => [],
+        'products'    => ['hydra-life-fresh-sorbet-creme', 'hydra-life-creme-sorbet-intense',  'hydra-life-hydration-rescue-intense-sorbet-creme'],
         'vendor'      => 'DIOR'
     ],
-
+/*
     '' => [
         'model'       => '',
         'description' => 'Программа ухода, основанную на свежих средствах-сорбе c экстрактом мальвы для полностью увлажнённой и сияющей кожи',
